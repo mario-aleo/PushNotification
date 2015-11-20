@@ -23,6 +23,10 @@
                         {
                             "xml": "<feature name=\"Keyboard\"><param name=\"ios-package\" onload=\"true\" value=\"IonicKeyboard\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"PushNotification\"><param name=\"ios-package\" value=\"PushPlugin\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -30,6 +34,16 @@
             "framework": {
                 "parents": {
                     "CoreLocation.framework": []
+                }
+            },
+            "*-Info.plist": {
+                "parents": {
+                    "UIBackgroundModes": [
+                        {
+                            "xml": "<array><string>remote-notification</string></array>",
+                            "count": 1
+                        }
+                    ]
                 }
             }
         }
@@ -45,6 +59,9 @@
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
         "com.phonegap.plugins.OrientationLock": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "phonegap-plugin-push": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         }
     },

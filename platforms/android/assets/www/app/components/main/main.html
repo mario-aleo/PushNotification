@@ -1,11 +1,11 @@
-<div flex layout="column" layout-align="center center" style="width: 100%; height: 100%;" ng-cloak>
-  <md-toolbar flex="10">
+<div flex layout="column" layout-align="start center" style="width: 100%; height: 100%;" ng-cloak>
+  <md-toolbar>
     <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
       <md-button class="md-icon-button" aria-label="Disable" ng-disabled="true">
       </md-button>
 
       <h2>
-        <span>Main Page</span>
+        <span>Push Notification</span>
       </h2>
 
       <md-button class="md-icon-button" aria-label="Disable" ng-disabled="true">
@@ -13,19 +13,27 @@
     </div>
   </md-toolbar>
 
-    <md-content style="width: 100%;">
-      <md-list>
-        <md-list-item class="md-2-line" ng-repeat="eqp in main.eqpList" main-repeat ui-sref="detail({ veiculoID: eqp.id, veiculoData: eqp })" ng-cloak>
-          <ng-md-icon icon="vpn_key" class="md-avatar"></ng-md-icon>
-          <div class="md-list-item-text" layout="column">
-            <h3>{{ eqp.identificador }}</h3>
-            <p>{{ eqp.sinonimo }}</p>
-          </div>
-          <div class="md-list-item-text" layout="column" layout-align="center end">
-            <p>{{ eqp.dataUltPos }} - {{ eqp.horaUltPos }}</p>
-            <p>{{ eqp.municipio }} - {{ eqp.uf }}</p>
-          </div>
-        </md-list-item>
-      </md-list>
-    </md-content>
+  <div flex layout="column" layout-align="center center" style="width: 100%;">
+    <md-card style="width: 90%; height: 30em;">
+      <md-card-content>
+        <md-switch ng-model="main.swt.onOff" aria-label="Notify" class="md-block" ng-true-value="'On'" ng-false-value="'Off'">
+          Push Notification: {{ main.swt.onOff }}
+        </md-switch>
+      </md-card-content>
+
+      <md-divider></md-divider>
+
+      <md-subheader class="md-no-sticky">Notifications List</md-subheader>
+      <md-content style="width: 100%;">
+        <md-list>
+          <md-list-item class="md-2-line" ng-repeat="notify in main.notifyList">
+            <div class="md-list-item-text">
+              <h3>{{ notify.title }}</h3>
+              <p>{{ notify.text }}</p>
+            </div>
+          </md-list-item>
+        </md-list>
+      </md-content>
+    </md-card>
+  </div>
 </div>

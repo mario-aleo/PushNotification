@@ -1,35 +1,18 @@
 'use strict';
 
-angular.module('ngapp').controller('MainController', function($rootScope, global, mainService, $state){
-
-  if(global.info.cliID == null || global.info.usuID == null){
-    $rootScope.endload();
-    $state.go('login');
-  }
-
-  $rootScope.startload();
+angular.module('ngapp').controller('MainController', function(global, mainService, $state, $scope, $localStorage){
 
   var ctrl = this;
 
-  this.eqpList;
+  this.storage = $localStorage;
 
-  this.listEqpEspelhados = function(){
-    alert("key" + global.info.key + " cliID" + global.info.cliID + " lat" + 0 + " lon" + 0 + " usuID" + global.info.usuID + " tipo" + 18);
-    mainService.list({"key": global.info.key, "cliID": global.info.cliID, "lat": 0, "lon": 0, "usuID": global.info.usuID, "tipo": 18})
-      .success(function(data){
-        if(data.value == -1 || data.value == 0){
-          console.log("Error: Nothing Here ");
-        } else{
-          console.log("Success: List Loaded");
-          ctrl.eqpList = data.objects;
-          alert(JSON.stringify(data.objects));
-        }
-      })
-      .error(function(err){
-        console.log("Error " + err + ": Sem Conexão");
-      });
-  };
+  if(this.storage.swt == null){
+    this.storage.swt = true;
+  }
 
-  this.listEqpEspelhados();
+  this.swt = { onOff: this.storage.swt };
 
+  $scope.$watch('main.swt.onOff', function(){
+    ctrl.storage.swt = ctrl.swt.onOff;
+  }, true);
 });

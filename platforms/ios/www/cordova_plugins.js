@@ -21,6 +21,13 @@ module.exports = [
         "clobbers": [
             "OrientationLock"
         ]
+    },
+    {
+        "file": "plugins/phonegap-plugin-push/www/push.js",
+        "id": "phonegap-plugin-push.PushNotification",
+        "clobbers": [
+            "PushNotification"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -29,7 +36,8 @@ module.exports.metadata =
     "cordova-plugin-statusbar": "2.0.0-dev",
     "cordova-plugin-whitelist": "1.0.0",
     "ionic-plugin-keyboard": "1.0.6",
-    "com.phonegap.plugins.OrientationLock": "0.1"
+    "com.phonegap.plugins.OrientationLock": "0.1",
+    "phonegap-plugin-push": "1.4.4"
 }
 // BOTTOM OF METADATA
 });
