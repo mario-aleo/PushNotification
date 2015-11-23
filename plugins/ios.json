@@ -31,11 +31,6 @@
                     ]
                 }
             },
-            "framework": {
-                "parents": {
-                    "CoreLocation.framework": []
-                }
-            },
             "*-Info.plist": {
                 "parents": {
                     "UIBackgroundModes": [
@@ -49,20 +44,20 @@
         }
     },
     "installed_plugins": {
+        "com.phonegap.plugins.OrientationLock": {
+            "PACKAGE_NAME": "io.cordova.SCMD"
+        },
         "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+            "PACKAGE_NAME": "io.cordova.SCMD"
         },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+            "PACKAGE_NAME": "io.cordova.SCMD"
         },
         "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
-        },
-        "com.phonegap.plugins.OrientationLock": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+            "PACKAGE_NAME": "io.cordova.SCMD"
         },
         "phonegap-plugin-push": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+            "PACKAGE_NAME": "io.cordova.SCMD"
         }
     },
     "dependent_plugins": {}

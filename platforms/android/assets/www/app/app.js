@@ -16,42 +16,9 @@ angular.module('ngapp', [ 'ngTouch', 'ui.router', 'uuid4', 'angular-uuid', 'json
       }
     }, false );
 
-    /*var androidConfig = {
-      "senderID": "golsat_mobile_master"
-    };
-
-    $cordovaPush.register(androidConfig).then(function(result) {
-      console.log(result);
-    }, function(err) {
-      console.log(err);
-    })
-
-    $rootScope.$on('$cordovaPush:notificationReceived', function(event, notification) {
-      switch(notification.event) {
-        case 'registered':
-          if (notification.regid.length > 0 ) {
-            alert('registration ID = ' + notification.regid);
-          }
-          break;
-
-        case 'message':
-          // this is the actual push notification. its format depends on the data model from the push server
-          alert('message = ' + notification.message + ' msgCount = ' + notification.msgcnt);
-          break;
-
-        case 'error':
-          alert('GCM error = ' + notification.msg);
-          break;
-
-        default:
-          alert('An unknown GCM event has occurred');
-          break;
-      }
-    });*/
-
     var push = PushNotification.init({
       "android": {
-        "senderID": "pushnotifytest-1135"
+        "senderID": "102017299068"
         // Api Key: AIzaSyC-pQwwbViFDmoHVIK9_ZN18uFqFU5nYtQ
       },
       "ios": {
@@ -65,6 +32,7 @@ angular.module('ngapp', [ 'ngTouch', 'ui.router', 'uuid4', 'angular-uuid', 'json
       push.on('registration', function(data) {
         // data.registrationId
         console.log("Registration: " + JSON.stringify(data));
+        //alert("Registration: " + JSON.stringify(data));
       });
     //}
 
