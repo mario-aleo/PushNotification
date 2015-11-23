@@ -55,11 +55,11 @@
                             "count": 1
                         },
                         {
-                            "xml": "<permission android:name=\"io.cordova.PushThis.permission.C2D_MESSAGE\" android:protectionLevel=\"signature\" />",
+                            "xml": "<permission android:name=\"io.cordova.pushthis.permission.C2D_MESSAGE\" android:protectionLevel=\"signature\" />",
                             "count": 1
                         },
                         {
-                            "xml": "<uses-permission android:name=\"io.cordova.PushThis.permission.C2D_MESSAGE\" />",
+                            "xml": "<uses-permission android:name=\"io.cordova.pushthis.permission.C2D_MESSAGE\" />",
                             "count": 1
                         }
                     ],
@@ -69,7 +69,7 @@
                             "count": 1
                         },
                         {
-                            "xml": "<receiver android:exported=\"true\" android:name=\"com.google.android.gms.gcm.GcmReceiver\" android:permission=\"com.google.android.c2dm.permission.SEND\"><intent-filter><action android:name=\"com.google.android.c2dm.intent.RECEIVE\" /><category android:name=\"io.cordova.PushThis\" /></intent-filter></receiver>",
+                            "xml": "<receiver android:exported=\"true\" android:name=\"com.google.android.gms.gcm.GcmReceiver\" android:permission=\"com.google.android.c2dm.permission.SEND\"><intent-filter><action android:name=\"com.google.android.c2dm.intent.RECEIVE\" /><category android:name=\"io.cordova.pushthis\" /></intent-filter></receiver>",
                             "count": 1
                         },
                         {
@@ -91,19 +91,19 @@
     },
     "installed_plugins": {
         "com.phonegap.plugins.OrientationLock": {
-            "PACKAGE_NAME": "io.cordova.PushThis"
+            "PACKAGE_NAME": "io.cordova.pushthis"
         },
         "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "io.cordova.PushThis"
+            "PACKAGE_NAME": "io.cordova.pushthis"
         },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "io.cordova.PushThis"
+            "PACKAGE_NAME": "io.cordova.pushthis"
         },
         "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "io.cordova.PushThis"
+            "PACKAGE_NAME": "io.cordova.pushthis"
         },
         "phonegap-plugin-push": {
-            "PACKAGE_NAME": "io.cordova.PushThis"
+            "PACKAGE_NAME": "io.cordova.pushthis"
         }
     },
     "dependent_plugins": {}

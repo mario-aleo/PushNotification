@@ -4,6 +4,8 @@ angular.module('ngapp', [ 'ngTouch', 'ui.router', 'uuid4', 'angular-uuid', 'json
 
 .run(function($rootScope, $cordovaDevice, $state, $cordovaPush, $localStorage){
   document.addEventListener("deviceready", function () {
+    StatusBar.overlaysWebView(false);
+    StatusBar.backgroundColorByName("black");
     $rootScope.$watch("window.StatusBar", function() {
       StatusBar.overlaysWebView(false);
       StatusBar.backgroundColorByName("black");
@@ -21,18 +23,18 @@ angular.module('ngapp', [ 'ngTouch', 'ui.router', 'uuid4', 'angular-uuid', 'json
         "senderID": "102017299068"
         // Api Key: AIzaSyC-pQwwbViFDmoHVIK9_ZN18uFqFU5nYtQ
       },
-      "ios": {
+      "ios":{
         "alert": "true",
-        "badge": "true",
+        "badge": "false",
         "sound": "false"
-      }, "windows": {}
+      },
+      "windows":{}
     });
 
     //if($localStorage.swt == null){
       push.on('registration', function(data) {
         // data.registrationId
         console.log("Registration: " + JSON.stringify(data));
-        //alert("Registration: " + JSON.stringify(data));
       });
     //}
 

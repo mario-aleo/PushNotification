@@ -17,7 +17,7 @@
        under the License.
  */
 
-package io.cordova.PushThis;
+package io.cordova.pushthis;
 
 import android.os.Bundle;
 import org.apache.cordova.*;

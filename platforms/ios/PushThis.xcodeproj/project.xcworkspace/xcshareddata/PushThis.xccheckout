@@ -5,9 +5,9 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>2D2B8BFC-A9B0-4AFC-880A-EB1AEB489E87</string>
+	<string>685F7020-E801-4301-8355-4FE92EE4C7FC</string>
 	<key>IDESourceControlProjectName</key>
-	<string>SCMD</string>
+	<string>PushThis</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>3660FA262968B093AEDF6B47CB6D05623EFC484B</key>
@@ -16,7 +16,7 @@
 		<string>https://github.com/marioaleogolsat/PushNotification.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>platforms/ios/SCMD.xcodeproj</string>
+	<string>platforms/ios/PushThis.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>3660FA262968B093AEDF6B47CB6D05623EFC484B</key>

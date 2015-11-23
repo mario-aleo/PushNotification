@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-               BuildableName = "SCMD.app"
-               BlueprintName = "SCMD"
-               ReferencedContainer = "container:SCMD.xcodeproj">
+               BuildableName = "PushThis.app"
+               BlueprintName = "PushThis"
+               ReferencedContainer = "container:PushThis.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-            BuildableName = "SCMD.app"
-            BlueprintName = "SCMD"
-            ReferencedContainer = "container:SCMD.xcodeproj">
+            BuildableName = "PushThis.app"
+            BlueprintName = "PushThis"
+            ReferencedContainer = "container:PushThis.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-            BuildableName = "SCMD.app"
-            BlueprintName = "SCMD"
-            ReferencedContainer = "container:SCMD.xcodeproj">
+            BuildableName = "PushThis.app"
+            BlueprintName = "PushThis"
+            ReferencedContainer = "container:PushThis.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-            BuildableName = "SCMD.app"
-            BlueprintName = "SCMD"
-            ReferencedContainer = "container:SCMD.xcodeproj">
+            BuildableName = "PushThis.app"
+            BlueprintName = "PushThis"
+            ReferencedContainer = "container:PushThis.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

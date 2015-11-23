@@ -17,7 +17,7 @@
  under the License.
  */
 //
-// Prefix header for all source files of the 'SCMD' target in the 'SCMD' project
+// Prefix header for all source files of the 'PushThis' target in the 'PushThis' project
 //
 
 #ifdef __OBJC__

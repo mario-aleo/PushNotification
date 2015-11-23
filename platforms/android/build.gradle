@@ -96,7 +96,7 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
-apply from: "phonegap-plugin-push/PushThis-push.gradle"
+apply from: "phonegap-plugin-push/pushthis-push.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras = file('build-extras.gradle').exists()
