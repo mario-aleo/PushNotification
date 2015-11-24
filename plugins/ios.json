@@ -45,19 +45,19 @@
     },
     "installed_plugins": {
         "com.phonegap.plugins.OrientationLock": {
-            "PACKAGE_NAME": "io.cordova.pushthis"
+            "PACKAGE_NAME": "br.com.golsat.testeiphone"
         },
         "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "io.cordova.pushthis"
+            "PACKAGE_NAME": "br.com.golsat.testeiphone"
         },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "io.cordova.pushthis"
+            "PACKAGE_NAME": "br.com.golsat.testeiphone"
         },
         "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "io.cordova.pushthis"
+            "PACKAGE_NAME": "br.com.golsat.testeiphone"
         },
         "phonegap-plugin-push": {
-            "PACKAGE_NAME": "io.cordova.pushthis"
+            "PACKAGE_NAME": "br.com.golsat.testeiphone"
         }
     },
     "dependent_plugins": {}
